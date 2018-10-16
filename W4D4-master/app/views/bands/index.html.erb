@@ -1,0 +1,9 @@
+<h1 class="bandzhead">BANDZZ</h1>
+
+<ul>
+  <% @bands.each do |band| %>
+    <li>
+      <%= render "band", bandz: band, action: :index %>
+    </li>
+  <% end %>
+</ul>

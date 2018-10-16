@@ -1,0 +1,22 @@
+<!-- dont forget to pass in something -->
+ <%# 
+#   action_url = user.persisted? ? user_url(user) : users_url
+#   method_verb = user.persisted? ? 'patch' : 'post'
+#  %>
+
+<form action="<%= action_url %>" method="post">
+  <%= auth_token %>
+  <!-- <input type="hidden" name="_method" value="<%#= method_verb %>"> -->
+  
+  <label for="username">Username:</label>
+  <input id="username" type="text" name="user[username]" value="">
+  
+  <label for="email">Email:</label>
+  <input id="email" type="text" name="user[email]" value="">  
+  
+  <label for="password">Password:</label>
+  <input id="password" type="password" name="user[password]" value="">
+  
+  <input type="submit" name="submit" value="<%= button_txt %>">
+  
+</form>

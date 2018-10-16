@@ -1,0 +1,61 @@
+
+body {
+  display: flex;
+  justify-content: center;
+}
+.clock-stuff {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.tab-stuff {
+  padding: 10px;
+  font-family: 'Press Start 2p';
+}
+
+h1 {
+  font-size: 20px;
+  font-family: 'Press Start 2p';
+  padding: 10px;
+  color: #000;
+}
+
+.tab-box {
+  height: 180px;
+  width: 160px;
+  padding: 20px;
+  color: #FFF;
+  border: 3px solid #ffff00;
+  background-color: #66b266
+}
+
+.clock-box {
+  font-size: 20px;
+  width: 500px;
+  padding: 15px;
+  color: #FFF;
+  border: 3px solid #ffff00;
+  background-color: #6666FF
+}
+
+.clock-time {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: 'Press Start 2p';
+}
+
+.clock-date {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Press Start 2p';
+}
+
+.clock-time div {
+  padding: 10px;
+}
+
+.clock-date div {
+  padding: 10px;
+}

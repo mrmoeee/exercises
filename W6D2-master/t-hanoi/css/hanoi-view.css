@@ -1,0 +1,53 @@
+html, body, h1, figure, ul, li {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  text-align: inherit;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+figure {
+
+  width: 600px;
+  background-color: #40E0D0;
+}
+
+.hanoi {
+  margin: 30px auto;
+}
+/* chocolate fudge somethings up */
+.hanoi ul {
+  display: flex;
+  float: left;
+  justify-content: center;
+  margin: 5px;
+  height: 10px;
+  width: 100px;
+}
+
+ul {
+  list-style: none;
+  background-color: black;
+}
+
+li {
+  background-color: black;
+}

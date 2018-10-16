@@ -1,0 +1,41 @@
+/* PHASE 9: Forms */
+
+.form {
+  margin: 0 0 20px 0;
+}
+.form-fieldset {
+  float: left;
+  background: lightgray;
+  margin: 0 0 0 20px;
+  width: 500px;
+  padding: 20px;
+}
+
+.form-title {
+  background: white;
+}
+
+.input > input {
+  background: white;
+}
+
+.input > textarea {
+  background: white;
+}
+/* .thumb:before {
+  content: "";
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -7px;
+  border-top: 5px solid #000;
+  border-bottom: 0;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+} */
+
+/* .thumb:hover:before,
+.thumb:hover:after {
+  display: block;
+} */

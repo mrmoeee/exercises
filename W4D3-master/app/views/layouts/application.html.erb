@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>NinetyNineCats</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+
+    <form style="float: right" action=" <%= cats_url %> " method="get">
+      <input type="hidden" name="authenticity_token" value=" <%= form_authenticity_token %> ">
+
+      <input type="submit" name="home" value="cats">
+    </form>
+    <% if current_user %>
+      <form action=" <%= session_url %> " method="post">
+        <input type="hidden" name="authenticity_token" value=" <%= form_authenticity_token %> ">
+
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" name="logout" value="logout">
+      </form>
+      </br>
+      <h2><%="Hi " + current_user.username if current_user%></h2>
+    <% else %>
+      <form style="display: inline-block;float: right;" for="signup" action=" <%= new_user_url %> " method="get">
+        <input type="hidden" name="authenticity_token" value=" <%= form_authenticity_token %> ">
+
+        <input id="signup"  type="submit" name="sign up" value="sign up">
+      </form>
+      <form style="display: inline-block;float: right" for="login" action=" <%= new_session_url %> " method="get">
+        <input type="hidden" name="authenticity_token" value=" <%= form_authenticity_token %> ">
+
+        <input id="login" type="submit" name="login" value="login">
+      </form>
+    <% end %>
+
+    <%= yield %>
+  </body>
+</html>

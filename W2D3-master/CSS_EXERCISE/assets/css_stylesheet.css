@@ -1,0 +1,38 @@
+html {
+  background-color: #00CED1;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+header>img { 
+  width: 100px; 
+}
+
+ul>li>a { 
+  text-decoration: none;
+  color: inherit;
+}
+
+.ol-bullets {
+  list-style: circle inside;
+}
+
+.ingredients-list {
+  list-style: square inside;
+}
+
+.user_review {
+  font-family: cursive;
+  font-size: 72px;
+  text-decoration: line-through;
+}

@@ -1,0 +1,15 @@
+input {
+  font-size: 10px;
+  float: right;
+}
+
+
+
+#partials {
+  float: right;
+  font-family: impact;
+  font-size: 20px;
+  opacity: 0.5;
+  color: #006600;
+  text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -2px black;
+}

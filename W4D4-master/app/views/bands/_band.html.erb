@@ -1,0 +1,19 @@
+<ul>
+  <li> <%= bandz.name %> </li>
+  <li> <%= bandz.genre %> </li>
+
+  <% if action == :show %>
+    <li><a href="<%= bands_url %>">Bandz Index</a></li>
+  <% else %>
+    <li><a href="<%= band_url(bandz) %>">Bandz Show</a></li>
+  <% end %>
+
+  <li> <a href="<%= edit_band_url(bandz) %>">Bandz Edit</a> </li>
+  <li>
+    <form action=" <%= band_url(bandz) %> " method="post">
+      <input type="hidden" name="_method" value="delete">
+      <input type="hidden" name="authenticity_token" value=" <%= form_authenticity_token %> ">
+      <input type="submit" value="Delete BAND">
+    </form>
+  </li>
+</ul>

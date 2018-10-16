@@ -1,0 +1,39 @@
+<%
+  if type == :new
+    action = users_url
+    button_txt = "sign up"
+    title_txt = "SIGN UP PLEASE"
+  else
+    action = session_url
+    button_txt = "log in"
+    title_txt = "LOG IN"
+  end
+ %>
+ <%= stylesheet_link_tag 'forms', media: 'all' %>
+
+ <head id="head1">
+   <h2> <%= title_txt %> </h2>
+ </head>
+ <body>
+   <div id="partials">
+     <form action=" <%= action %> " method="post">
+
+       <input type="hidden" name="authenticity_token" value=" <%= form_authenticity_token %> ">
+
+       <label for="email">
+         Email:
+       </label>
+       <input type="text" name="user[email]">
+       <br><br>
+
+       <label for="password">
+         Password:
+       </label>
+       <input type="password" name="user[password]">
+       <br><br>
+
+       <input type="submit" name="submit" value="<%= button_txt %>">
+
+     </form>
+   </div>
+ </body>
